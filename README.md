@@ -7,37 +7,23 @@ This is a working Gameboy flash cartridge. I've made a few different types of ca
 
 This uses FRAM to preserve game saves when the backup battery eventually dies. The battery is only needed to keep the real time clock running. Battery failure will only ruin the games clock, which in pokemon games are able to be reset upon boot after a failure. The clock system uses much more power than just keeping information saved in SRAM.
 
-![Gameboy MBC3 Cart Front](https://user-images.githubusercontent.com/65309612/233170648-b1a93514-2ca5-401a-8317-f28b5eb1a6b6.jpg)
-![Gameboy MBC3 Cart Back](https://user-images.githubusercontent.com/65309612/233170666-66f15a34-23f5-46ab-b77b-153c60b77e46.jpg)
+![Gameboy MBC3 Cart Front V2](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/35c34da4-2bfa-4a5d-8814-c022310ae7d5)
+![Gameboy MBC3 Cart Back V2](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/ab5fb4c4-cbe6-4292-acef-693cbac299ce)
 ![20230419_194524](https://user-images.githubusercontent.com/65309612/233172349-abfa717a-c454-454d-86bf-366a7aec2b89.jpg)
 
-**Parts List**
-
-Battery Holder: Plastic low profile holder from Aliexpress
-
-C1, C2: 15pF 0603
-
-C3, C4, C5, C6: 100nF 0603
-
-R1: 1K 0603
-
-R2: 330K 0603
-
-R3: 10K 0603
-
-U1: BA612AF or whatever chip that is to be taken from your MBC3 cartridge
-
-U2: MBC3
-
-U3: 74LVC1G332W TSOP Sourced loads for cheap on Aliexpress
-
-U4: 29F016
-
-U5: FM1808 or FM10W08 or FM18L08
-
-Y1: Crystal from donor cart
-
-You can reuse the passives from the donor cart to save buying all of them.
+| Parts List | Quantity | Donor Salvage |
+| --- | --- | --- |
+| 15pF Cap 0603 | 2 | Yes |
+| 100nF Cap 0603 | 4 | Yes |
+| 1K Res 0603 | 1 | Yes |
+| 330K Res 0603 | 1 | Yes |
+| 10K Res 0603 | 1 | No |
+| BA6129A or MM134A | 1 | Yes |
+| MBC3 | 1 | Yes |
+| 74LVC1G332W | 1 | No |
+| 29F016 | 1 | No |
+| FM1808 or FM10W08 or FM18L08 | 1 | No |
+| 32.768 kHz Quartz Oscillator | 1 | No |
 
 **EEPROM AM29F016B**
 
@@ -56,6 +42,10 @@ You will need to find these from an exsisting game. These are tougher to find ov
 **74LVC1G332GW**
 
 This OR gate is needed to allow games to be saved properly. Some MBC1 and 99% of MBC5 do not require it. Due to the MBC3 controlling the write access to the FRAM, the correct write pulses aren't done. This doesn't effect SRAM but is not compatible with FRAM.
+
+16/06/23
+
+Tidied up readme a bit and a minopr PCB revision. Updated battery holder footprint and added a version without JLC markings. You know what to do.
 
 19/04/23
 
