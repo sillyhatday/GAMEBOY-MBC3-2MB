@@ -23,7 +23,7 @@ This uses FRAM to preserve game saves when the backup battery eventually dies. T
 | 74LVC1G332W | 1 | No |
 | 29F016 | 1 | No |
 | FM1808 or FM10W08 or FM18L08 | 1 | No |
-| 32.768 kHz Quartz Oscillator | 1 | No |
+| 32.768 kHz Quartz Oscillator | 1 | Yes |
 
 **EEPROM AM29F016B**
 
