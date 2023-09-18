@@ -7,8 +7,8 @@ This is a working Gameboy flash cartridge. I've made a few different types of ca
 
 This uses FRAM to preserve game saves when the backup battery eventually dies. The battery is only needed to keep the real time clock running. Battery failure will only ruin the games clock, which in pokemon games are able to be reset upon boot after a failure. The clock system uses much more power than just keeping information saved in SRAM.
 
-![Gameboy MBC3 Cart Front V2](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/35c34da4-2bfa-4a5d-8814-c022310ae7d5)
-![Gameboy MBC3 Cart Back V2](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/ab5fb4c4-cbe6-4292-acef-693cbac299ce)
+![Gameboy MBC3 Cart V2 0 Front](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/cc5ee666-9f06-434c-87f0-f232f6a9f846)
+![Gameboy MBC3 Cart V2 0 Back](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/e5bc61fd-ddb7-4291-ba2f-46ccb9bd910c)
 ![20230419_194524](https://user-images.githubusercontent.com/65309612/233172349-abfa717a-c454-454d-86bf-366a7aec2b89.jpg)
 
 | Parts List | Quantity | Donor Salvage |
@@ -42,6 +42,10 @@ You will need to find these from an exsisting game. These are tougher to find ov
 **74LVC1G332GW**
 
 This OR gate is needed to allow games to be saved properly. Some MBC1 and 99% of MBC5 do not require it. Due to the MBC3 controlling the write access to the FRAM, the correct write pulses aren't done. This doesn't effect SRAM but is not compatible with FRAM.
+
+18/09/2023
+
+Moved FRAM power pin from battery to cartridge VCC. No point keeping FRAM powered at all, it's just wasting battery power. 6.3uA current draw to 4.3uA 
 
 16/06/23
 
