@@ -40,9 +40,9 @@ So in my tinkering with all this, I can suggest that you spend £12 per chip for
 
 You will need to find these from an exsisting game. These are tougher to find over the MBC5, due to them only being used in games that used real time clock functionality. So far I have got two from a Japanese version of Hamtaro. I see that the USA can get cheap versions of Mary-Kate and Ashley games to source parts from. You'll likely want to use this to play versions of Pokemon that make use of the real time clock, such as Silver, Gold and Crystal along with any ROM hacks. In theory these are compatible with all MBC1 and 5 games. That is not the case but certainly some of those games can be used on this too.
 
-*The following section I have copied from https://github.com/MouseBiteLabs the Bucket Mouse. Please check out their work. I started a table and I'm unsure if they used some of my values in this one, but they can have all the credit for it. I've just slightly modified it to be more suitable to my project*
-
 ### MBC3 Type
+
+*The following section I have copied from https://github.com/MouseBiteLabs the Bucket Mouse. Please check out their work. I started a table and I'm unsure if they used some of my values in this one, but they can have all the credit for it. I've just slightly modified it to be more suitable to my project*
 
 The MBC3 chip you use from the donor cartridge can be one of a few different types:
 
@@ -66,7 +66,7 @@ For the test set up, I am replacing the battery with a regulated DC power supply
 | MBC3B |	BU3634K |	0.6 uA |	31 years |	1.5 uA |	13 years |	18 years |
 | MBC3B |	P-2 |	0.4 uA |	47 years |	3.7 uA |	5 years |	7 years |
 
-Take away 0.05uA for SRAM current usage in Bucket Mouse testing method. We are using FRAM here and it's power supply is not connected to the battery.
+*Take away 0.05uA for SRAM current usage in Bucket Mouse testing method. We are using FRAM here and it's power supply is not connected to the battery.*
 
 ## 74LVC1G332GW
 
