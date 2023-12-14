@@ -1,5 +1,5 @@
 # GAMEBOY-FLASHCART-MBC3-2MB
-MBC3 based Gameboy flashcart using FRAM
+MBC3 based Gameboy flashcart using FRAM. Final version tested and working. 
 
 Using footprints from https://github.com/HDR Be sure to check out their designs as well.
 
@@ -25,9 +25,9 @@ This uses FRAM to preserve game saves when the backup battery eventually dies. T
 | FM1808 or FM10W08 or FM18L08 | 1 | No |
 | 32.768 kHz Quartz Oscillator | 1 | Yes |
 
-**EEPROM AM29F016B**
+**EEPROM 29F016B**
 
-I've found them available from Aliexpress very easily. Lately the prices of these have risen. Once available for about £1 per chip are not £1.60 per chip. These are a 16-bit address and 8-bit data bus EEPROM. The write enable pin is brought to the audio pin on the Gameboy cartridge header. This is compatible with the GBxCart RW. The pin is held to 5v to keep it disabled during usage through a pullup resistor. You can buy 0603 spec 10k resistors or reuse the resistor on an original Nintendo doner PCB. I've not seen any need for this pull up resistor, but I can see it will cause a problem down the line somehow without it. 70 hours into Pokemon Yellow I wouldn't want the EEPROM to get corrupted and loose your save. I'm not sure if the audio pin is held low by the Gameboy, I think it is, so likely there isn't a need for it. You can omit it if you like. You'll use 500uA of current usage.
+I've found them available from Aliexpress very easily. Lately the prices of these have risen. Once available for about £1 per chip are not £1.60 per chip. These are a 16-bit address and 8-bit data bus EEPROM. The write enable pin is brought to the audio pin on the Gameboy cartridge header. This is compatible with the GBxCart RW. The pin is held to 5v to keep it disabled during usage through a pullup resistor. You can buy 0603 spec 10k resistors or reuse the resistor on an original Nintendo doner PCB. I've not seen any need for this pull up resistor, but I can see it will cause a problem down the line somehow without it. 70 hours into Pokemon Yellow I wouldn't want the EEPROM to get corrupted and loose your save. I'm not sure if the audio pin is held low by the Gameboy, I think it is, so likely there isn't a need for it. You can omit it if you like. You'll save 500uA of current usage.
 
 **SRAM FM18W08**
 
@@ -49,7 +49,7 @@ Moved FRAM power pin from battery to cartridge VCC. No point keeping FRAM powere
 
 16/06/23
 
-Tidied up readme a bit and a minopr PCB revision. Updated battery holder footprint and added a version without JLC markings. You know what to do.
+Tidied up readme a bit and a minor PCB revision. Updated battery holder footprint and added a version without JLC markings. You know what to do.
 
 19/04/23
 
