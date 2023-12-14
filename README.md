@@ -37,7 +37,34 @@ So in my tinkering with all this, I can suggest that you spend £12 per chip for
 
 **MBC3, BA6129AF**
 
-You will need to find these from an exsisting game. These are tougher to find over the MBC5, due to them only being used in games that used real time clock functionality. So far I have got two from a Japanese version of Hamtaro. I see that the USA can get cheap versions of Mary-Kate and Ashley games to source parts from. You'll likely want to use this to play versions of Pokemon that make use of the real time clock, such as Silver, Gold and Crystal along with any ROM hacks. In theory these are compatiblw with all MBC1 and 5 games. That is not the case but certainly some of those games can be used on this too.
+You will need to find these from an exsisting game. These are tougher to find over the MBC5, due to them only being used in games that used real time clock functionality. So far I have got two from a Japanese version of Hamtaro. I see that the USA can get cheap versions of Mary-Kate and Ashley games to source parts from. You'll likely want to use this to play versions of Pokemon that make use of the real time clock, such as Silver, Gold and Crystal along with any ROM hacks. In theory these are compatible with all MBC1 and 5 games. That is not the case but certainly some of those games can be used on this too.
+
+*The following section I have copied from https://github.com/MouseBiteLabs the Bucket Mouse. Please check out their work. I started a table and I'm unsure if they used some of my values in this one, but they can have all the credit for it. I've just slightly modified it to be more suitable to my project*
+
+**MBC3 Type**
+The MBC3 chip you use from the donor cartridge can be one of a few different types:
+
+https://private-user-images.githubusercontent.com/97127539/280905868-24aaa7eb-fbc7-428d-955a-e1005c491098.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI1NzQ2ODQsIm5iZiI6MTcwMjU3NDM4NCwicGF0aCI6Ii85NzEyNzUzOS8yODA5MDU4NjgtMjRhYWE3ZWItZmJjNy00MjhkLTk1NWEtZTEwMDVjNDkxMDk4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjE0VDE3MTk0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk1NjA2MTlkODNmMmZmZGJmOTk2NjBkMjU2OWE4NzhkMzc1NDI4Njc3OTNiM2EzNDgwNmI2ZGQyYTAxYzg3MTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.j0UUAMmAYhdSpCMUmxTuKi_MAolCCfkf3JLIt8E5qT0
+
+[Images of MBC3 chips from Game Boy Hardware Database.]
+
+Current Draw Measurements
+The revision of MBC3 chip you are using will influence the current draw out of the battery when the game is off, and thus how long your battery life will last. Using the real-time clock function on the MBC3 will draw more current than if you do not.
+
+For the test set up, I am replacing the battery with a regulated DC power supply set for 3 VDC for consistency, on a cart board with an MM1134 chip for U4, and brand new AS6C62256 SRAM. The "no RTC" measurements have Z1 (or C3) shorted, and the "with RTC" measurements have R2, C2, Z1, and X1 populated. I am using a Fluke 117 Multimeter in DC mV mode for measurements.
+
+| Rev |	P/N |	Current draw (without RTC) |	Battery Life Estimate (no RTC, CR2025) |	Current draw (with RTC) |	Battery Life Estimate (RTC, CR2025) |	Battery Life Estimate (RTC, CR2032) |
+|----|----|----|----|----|----|----|
+| MBC3 |	LR385364 |	0.2 uA |	>50 years |	1.8 uA |	10 years |	14 years |
+| MBC3 |	BU3631K |	0.6 uA |	31 years |	1.6 uA |	12 years |	16 years |
+| MBC3 |	P-1 |	0.4 uA |	47 years |	3.8 uA |	5 years |	7 years |
+| MBC3A |	LR38536B |	0.2 uA |	>50 years |	1.5 uA |	13 years |	18 years |
+| MBC3A |	BU3632K |	0.5 uA |	37 years |	1.5 uA |	13 years |	18 years |
+| MBC3A |	P-2 |	0.5 uA |	37 years |	3.9 uA |	5 years |	7 years |
+| MBC3B |	BU3634K |	0.6 uA |	31 years |	1.5 uA |	13 years |	18 years |
+| MBC3B |	P-2 |	0.4 uA |	47 years |	3.7 uA |	5 years |	7 years |
+
+Take away 0.05uA for SRAM current usage in Bucket Mouse testing method. We are using FRAM here and it's power supply is not connected to the battery.
 
 **74LVC1G332GW**
 
