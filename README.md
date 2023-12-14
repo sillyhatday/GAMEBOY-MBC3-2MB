@@ -46,7 +46,7 @@ You will need to find these from an exsisting game. These are tougher to find ov
 
 The MBC3 chip you use from the donor cartridge can be one of a few different types:
 
-![mbc3](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC5-2MB/assets/65309612/663a9d66-2034-4f00-8e20-82d9d1920869)
+![mbc3](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC5-2MB/assets/65309612/83c6f545-b811-4e65-b120-140bcd1276f3)
 
 [Images of MBC3 chips from Game Boy Hardware Database.]
 
