@@ -10,7 +10,8 @@ This uses FRAM to preserve game saves when the backup battery eventually dies. T
 
 ![Gameboy MBC3 Cart V2 0 Front](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/cc5ee666-9f06-434c-87f0-f232f6a9f846)
 ![Gameboy MBC3 Cart V2 0 Back](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/e5bc61fd-ddb7-4291-ba2f-46ccb9bd910c)
-![20230419_194524](https://user-images.githubusercontent.com/65309612/233172349-abfa717a-c454-454d-86bf-366a7aec2b89.jpg)
+![IMG_5675](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/5128a3c5-a692-4713-9426-b49466c5832b)
+![IMG_5672](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/8d694206-e6dc-48d0-b54f-b6b2889acf9e)
 
 | Parts List | Quantity | Donor Salvage |
 | --- | --- | --- |
