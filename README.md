@@ -6,7 +6,13 @@ Using footprints from https://github.com/HDR Be sure to check out their designs 
 
 This is a working Gameboy flash cartridge. I've made a few different types of cartridges, but thought this would be the most popular due to being compatible with the InsideGadgets GBxCart RW.
 
-This uses FRAM to preserve game saves when the backup battery eventually dies. The battery is only needed to keep the real time clock running. Battery failure will only ruin the games clock, which in pokemon games are able to be reset upon boot after a failure. The clock system uses much more power than just keeping information saved in SRAM.
+This uses FRAM to preserve game saves when the backup battery eventually dies. The battery is only needed to keep the real time clock running. Battery failure will only ruin the games clock, which in pokemon games are able to be reset upon boot after a failure.
+
+## Game compatibility:
+
+Simply put this probably the fourth most compatible cartridge. The only games you will need this for are the real time clock games and some other exceptions. Pokemon generation 2 games will work on this, Gold, Silver and Crystal. You can also use it with various Pokemon ROM hacks. Pokemon generation 1 (except Japan) also used this cartridge, but without using its real time clock function. It’s likely because the later GBC MBC5 mapper was not yet created. The Japanese release use the MBC1 with half the ROM size.
+
+## Photos:
 
 ![Gameboy MBC3 Cart V2 0 Front](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/cc5ee666-9f06-434c-87f0-f232f6a9f846)
 ![Gameboy MBC3 Cart V2 0 Back](https://github.com/sillyhatday/GAMEBOY-FLASHCART-MBC3-2MB/assets/65309612/e5bc61fd-ddb7-4291-ba2f-46ccb9bd910c)
