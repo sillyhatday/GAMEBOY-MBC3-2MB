@@ -95,4 +95,8 @@ Finished readme.
 
 18/04/23
 
+## License
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you must give appropriate credit, provide a link to the license, and indicate if any changes were made.
+
 Initial release V1.1 of gerbers. Readme unfinished.
